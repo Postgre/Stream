@@ -18,28 +18,25 @@
 
             <FrameLayout
                 android:id="@+id/container"
-                android:layout_width="300dp"
-                android:layout_height="400dp"/>
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
 
             <Button
                 android:id="@+id/button_rec"
                 android:layout_width="match_parent"
                 android:text="REC"
-                android:layout_height="40dp"
-                android:layout_below="@id/container"/>
+                android:layout_height="40dp"/>
             <Button
                 android:id="@+id/button_stop"
                 android:layout_width="match_parent"
                 android:text="STOP"
-                android:layout_height="40dp"
-                android:layout_below="@id/button_rec"/>
-
-            <Button
-                android:id="@+id/button_connect"
+                android:layout_height="40dp"/>
+            
+            <SurfaceView
+                android:id="@+id/output_surface"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="CONNECT..."
-                android:layout_below="@id/button_stop"/>
+                android:layout_height="400dp" />
+
         </LinearLayout>
     </ScrollView>
 
